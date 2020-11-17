@@ -1,3 +1,3 @@
 # ETH MIKE Documentation
 
-This is where we keep all the documentation relevant for ETH MIKE development as well as use (e.g. manuals). 
+This is where we keep all the high level documentation relevant for ETH MIKE development and usage (e.g. manuals). 
