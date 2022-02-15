@@ -83,6 +83,7 @@ Switzerland & & \today
 \pagestyle{plain}
 \pagenumbering{arabic}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Table on contents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -440,6 +441,32 @@ With this view, you can see progress over time, in case you are performing the m
 \end{figure}
 
 \newpage
+
+\section{Proprioception Therapy Exercises}
+\subsection{Passive Matching}
+The aim of the exercise is to choose, among the presented options, where one’s finger is. The index finger is moved by the robot from a starting position to one of \emph{n} positions, where \emph{n} depends on the difficulty level. The vision of the hand is restricted due to the placement of the tablet. Once an answer is selected (by clicking on the button with a colour corresponding to the perceived finger position), feedback is provided. There is a training round before the exercise where visual feedback, in a form of a blue needle, is presented for the whole duration of the trial.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\columnwidth]{images/Therapy/exercises_explanation_v2.PNG}
+\caption{Passive and active matching exercises – visualization of the exercise interface as well as the feedback panel. Both passive exercises (Passive Matching and Trajectory Perception) have the same graphics (left panel) and all active exercises (Active Matching, Teach \& Reproduce, Haptic Bump) have similar graphical representation to reduce cognitive load of the exercises.}
+\label{fig:ExerciseExplanation}
+\end{center}
+\end{figure}
+
+\subsection{Active Matching}
+The aim of this exercise is to move as accurately as possible from a starting position (grey) to a target (green needle). There is no time constraint and once a participant is satisfied with the position researched, she/he can click on the green “validate” button to see feedback. During the feedback phase, the allowable error band is shown (shaded green area) as well as the actual finger position and a message if the reached position was within allowable error band (“Correct”) or not (“Upps”). Before an exercise, there is a practice round (consisting of 3 trials) where visual feedback is provided.
+
+\subsection{Teach \& Reproduce}
+The aim of the exercise is to reproduce a movement that is provided to the participant’s finger by the robot. First the participant needs to focus on the movement perceived, which lasts 3 seconds. Then, she/he needs to reproduce that movement as accurately as possible by actively moving a finger to a perceived end-location from a starting position. Once ready, she/he needs to click the “validate” button, after which visual feedback is provided (in a same way as described for Active Matching).
+
+\subsection{Haptic Bump}
+The aim of this exercise is to find haptic bumps within participant’s finger range of motion and locate it by dragging the gauge needle on the tablet screen located above the hand. Participants need to move their finger from the starting position within their range of motion slowly, trying to feel a small resistance against their motion. Once that resistance is found, they need to keep their finger there and, using the other hand, drag a green gauge needle on the tablet screen located above their hand to where they feel their finger is. Once they are satisfied with the position of the needle, they need to click on the “validate” green button to receive feedback. Before each exercise there is a practice round where visual feedback of the finger position is shown in a form of a blue gauge needle and where the location of the haptic bump is shown in yellow.
+
+\subsection{Trajectory Perception}
+This exercise is similar to Passive Matching, but participants need to focus on the movement rather than the current finger position. The finger is moved by the robot from a starting position to one of n position and then back to start. Participants need to choose among n options where the finger was moved to, where n depends on the difficulty level. Once the colour corresponding to the destination of choice is confirmed, feedback is provided.
+
+\newpage
 \section{Data Storage}
 \subsection{Raw Data}
 The data is always stored under the subject ID that was automatically assigned to a new used that you created.
@@ -483,7 +510,7 @@ To extract metrics from the database, first locate the file \emph{db.db} as indi
 \section{Packing for Transportation}
 Follow the steps indicated in Figure \ref{fig:Packaging} to pack or unpack the robot safely. The white foam is durable and can be reused for packaging and transporting the robot multiple times.\\
 
-The robot needs to be placed in a box of \SI{50x50x70}{\cm}. First, place the robot, with its end-effector fixated with the end-effector lock (the screw can be slightly tightened for transportation using an Allen key), inside the box (\#1 and \#2). Then, cover the end-effector with the bubble wrap. Cover larger components (handles and safety stop) in bubble wrap and place it under the tablet rails (\#3). Tablet and its keyboard, placed inside a box, should be covered in the bubble wrap and placed at the back of the robot (\#3). Then, place a foam protection above the tablet rails (\#4). Next, place all cables and small components into their designated box and cover it with bubble wrap. Also cover the incline place in bubble wrap. Place the box with cables and the incline plane on top of the foam (\#5). Place two protective pieces of foam (\#6). Close the box, then wrap it in bubble wrap and place inside a bigger box for transportation (\SI{57x57x77}{\cm}). This step is only necessary for shipment. The total weight of the system is around \SI{20}{\kg}. 
+The robot needs to be placed in a box of $50cm \times 50cm \times 70cm$. First, place the robot, with its end-effector fixated with the end-effector lock (the screw can be slightly tightened for transportation using an Allen key), inside the box (\#1 and \#2). Then, cover the end-effector with the bubble wrap. Cover larger components (handles and safety stop) in bubble wrap and place it under the tablet rails (\#3). Tablet and its keyboard, placed inside a box, should be covered in the bubble wrap and placed at the back of the robot (\#3). Then, place a foam protection above the tablet rails (\#4). Next, place all cables and small components into their designated box and cover it with bubble wrap. Also cover the incline place in bubble wrap. Place the box with cables and the incline plane on top of the foam (\#5). Place two protective pieces of foam (\#6). Close the box, then wrap it in bubble wrap and place inside a bigger box for transportation ($57cm \times 57cm \times 77cm$). This step is only necessary for shipment. The total weight of the system is around \SI{20}{\kg}.
 
 \begin{figure}[h!]
 \begin{center}
