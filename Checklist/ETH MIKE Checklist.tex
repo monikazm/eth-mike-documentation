@@ -1,0 +1,136 @@
+% Template article for preprint document class `elsart'
+% with harvard style bibliographic references
+% SP 2001/01/05
+
+\documentclass[11pt,a4paper]{paper}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{placeins}
+\usepackage{float}
+
+\usepackage{enumitem}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\usepackage{hyperref}	%has to be the last called!
+\hypersetup{pdfborder={0 0 0},
+	pdfauthor={Mike Domenik Rinderknecht, Monika Zbytniewska-Mégret, Manuel Yves Galliker},
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	urlcolor=black}
+
+
+
+
+\addtolength{\oddsidemargin}{-2.5cm}
+\addtolength{\topmargin}{-1cm}
+\setlength{\textwidth}{7in}
+\addtolength{\textheight}{3cm}
+
+\setlength{\parindent}{0in}
+
+\usepackage{calc}
+\newcommand{\figurewidth}{\columnwidth*\real{0.75}}
+
+%=====================================================================================
+   
+\begin{document}
+
+\title{\vspace{-1cm}ETH MIKE -- Checklist v2.0}
+
+\author{Monika Zbytniewska-Mégret}
+\institution{
+	Rehabilitation Engineering Laboratory\\
+	ETH Zurich\\
+	BAA, Lengghalde 5\\
+	8008 Zurich\\
+	Switzerland}
+
+\maketitle
+
+\vfill
+
+\textbf{At initial startup}
+\begin{todolist}
+	\setlength\itemsep{-0.25em}
+	\item Plug in robot and the tablet charger
+	\item Connect emergency button
+	\item Switch on tablet
+	\item Ensure emergency button is released
+	\item Ensure the end-effector is locked in the middle of the robot's workspace
+	\item Switch on the robot
+	\item Wait until a "click" sound, which indicates that calibration is performed. \\ After the sound you can move the end-effector freely 
+	\item Login on the tablet
+	\item Start application \texttt{ETH MIKE} on the desktop
+	\item Check if the communication symbol is not shown in red color
+\end{todolist}
+
+\textbf{After initial startup and if emergency button is pressed:}
+\begin{todolist}
+	\setlength\itemsep{-0.25em}
+	\item Release emergency button
+	\item Reset the robot and the tablet application 
+\end{todolist}
+
+\textbf{Before running the experiments}
+\begin{todolist}
+	\setlength\itemsep{-0.25em}
+	\item Disinfect hands with hand sanitizer
+	\item Ensure that the patient sits in an upright position in front of the device
+	\item Put on the bandage and strap and wrist splint to the patients wrist
+	\item Add pillows for the arm and back as necessary (see reference in Figure \ref{fig:MIKE_setup})
+	\item Put patient's hand on the handle and ensure that the patient holds it
+	\item Place the tablet on the mount of the robot, above the hand
+\end{todolist}
+
+\textbf{During the experiments}
+\begin{todolist}
+	\setlength\itemsep{-0.25em}
+	\item Login with subject ID code or create new one (button \texttt{Subject Login})
+	\item Start with the desired task (depending on the study protocol)
+	\item Ensure that the patient sits in an upright position in front of the device
+	\item Remove the tablet to ensure that the patients hand is properly positioned and holding on to the handle after the completion of each task
+\end{todolist}
+
+\textbf{After the experiments}
+\begin{todolist}
+	\setlength\itemsep{-0.25em}
+	\item Disinfect the handles of the device
+\end{todolist}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{images/setup_ETHMIKE_example.png}
+    \caption{Reference for patient posture and pillow position }
+    \label{fig:MIKE_setup}
+\end{figure}
+
+%=====================================================================================
+\vspace{1cm}
+
+\section*{Contact information}
+\label{s:contact_information}
+
+\noindent
+Rehabilitation Engineering Laboratory\\
+Monika Zbytniewska-Mégret\\
+ETH Zurich\\
+BAA, Lengghalde 5\\
+8008 Zurich\\
++41779615277\\
+monika.zbytniewska@hest.ethz.ch\\
+http://www.relab.ethz.ch\\
+
+\noindent
+Rehabilitation Engineering Laboratory\\
+Olivier Lambercy\\
+ETH Zurich\\
+BAA, Lengghalde 5\\
+8008 Zurich\\
++41445107246\\
+olivier.lambercy@hest.ethz.ch\\
+http://www.relab.ethz.ch\\
+
+\end{document}
